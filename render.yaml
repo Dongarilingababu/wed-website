@@ -1,0 +1,14 @@
+services:
+  - type: static
+    name: wed-website
+    env: node
+    # Render will run this command to build your site
+    buildCommand: "npm install && npm run build"
+    # Vite outputs the production files to `dist` by default
+    publishPath: dist
+    repo: https://github.com/Dongarilingababu/wed-website
+    branch: main
+    # Optional: you can set an environment with a specific Node version
+    # envVars:
+    #  - key: NODE_VERSION
+    #    value: "18"
